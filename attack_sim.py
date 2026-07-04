@@ -7,16 +7,10 @@ VT_API_KEY = "SET_YOUR_VT_API_KEY"
 
 payloads = [
     {
-        "attack_type": "Malicious Payload Injection",
-        "attacker_ip": "185.220.101.5", 
-        "payload": "admin' OR '1'='1",
-        "file_hash": "098eae6712e030f5071ebd677104f7a4"
+        "Set the Payload"
     },
     {
-        "attack_type": "Ransomware Activity Simulation",
-        "attacker_ip": "45.143.203.14", 
-        "payload": "<script>alert('Hacked')</script>",
-        "file_hash": "44d88612fea8a8f36de82e1278abb02f"
+        "Set the Payload"
     }
 ]
 
@@ -48,7 +42,7 @@ for attack in payloads:
     slack_payload = {
         "text": (
             f"🚨 *CRITICAL: Incident Response Automation Alert* 🚨\n\n"
-            f"• *Incident Type:* Cloud API Exfiltration\n"
+            f"• *Incident Type:* type the attach type\n"
             f"• *Attack Vector:* {attack['attack_type']}\n"
             f"• *Attacker IP:* {attack['attacker_ip']}\n"
             f"• *Payload Detected:* `{attack['payload']}`\n"
